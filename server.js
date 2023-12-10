@@ -8,9 +8,9 @@ const app = express();
 app.use(cors());
 
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: '104.197.211.214',
     user: 'root',
-    password: 'password',
+    password: 'trashPass123',
     database: 'tennisschema'
 });
 
@@ -126,7 +126,7 @@ app.post('/prizemoneyByPlayer', bodyParser.json(), (req, res) => {
 
 
 const server = http.createServer(app);
-
-server.listen(3000, () => {
-    console.log('Server is running on port 3000');
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
