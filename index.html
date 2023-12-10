@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample Web App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>CS 348 Final Project: Tennis Ranking Manager by Ritik Singh</h1>
+    <div class="bigformat">
+        <div>
+            <div>
+                <button onclick="updatePlayerDisplay()">Load Data</button><br><br>
+            </div>
+
+            <div>
+                <label for="playerID">Player ID:</label>
+                <input type="text" id="playerID" name="playerID"><br><br>
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="ranking">Ranking:</label>
+                <input type="text" id="ranking" name="ranking"><br><br>
+
+                <label for="points">Points:</label>
+                <input type="text" id="points" name="points"><br><br>
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age"><br><br>
+
+                <label for="lastmatch">LastMatch:</label>
+                <input type="text" id="lastmatch" name="lastmatch"><br><br>
+
+                <button onclick="addPlayerFlow()"> Add Player</button>
+            </div>
+        </div>
+        <div class="smallformat">
+            <div>
+                <button onclick="deletePlayerFlow()">Delete Player</button>
+                <select id="playerSelect"></select>
+            </div>
+
+            <div>
+                <button onclick="points_awardedSPFlow()">TotalPointsSP</button>
+                <select id="selectTournamentPoints"></select>
+                <div id="tournamentPointsSpot">Total points for Tournament: </div>
+            </div>
+
+            <div>
+                <button onclick="prizemoney_awardedSPFlow()">TotalPrizemoneySP</button>
+                <select id="selectTournamentMoney"></select>
+                <div id="tournamentMoneySpot">Total money for Tournament: </div>
+            </div>
+
+            <div>
+                <button onclick="prizemoney_by_playerFlow()">TotalPrizemoneyByPlayerSP</button>
+                <select id="playerSelectMoney"></select>
+                <div id="moneySpot">Total money for Player:</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="result"></div> -->
+    <table id="tbl">
+        <thead>
+            <tr>
+                <th>Player ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Ranking</th>
+                <th>Points</th>
+                <th>Age</th>
+                <th>LastMatch</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

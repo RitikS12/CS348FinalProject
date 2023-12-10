@@ -1,0 +1,13 @@
+.bigformat{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+
+.smallformat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
